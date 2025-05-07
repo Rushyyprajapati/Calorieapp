@@ -1,56 +1,53 @@
-# CalCraftr 🍽️ - Personalized Meal Tracking and Nutrition Planner
+# 🥗 CalCraftr — Smart Calorie & Activity Tracker
 
-**CalCraftr** is a single-page React application designed to help users track their meals, calculate nutritional intake, and receive tailored meal recommendations based on their goals. This application serves as a practical health management tool and is built using modern full-stack web development practices.
+CalCraftr is a sleek, full-stack calorie tracking web app built with React and TypeScript. It empowers users to log their meals, track physical activities, and visualize daily nutritional intake in real-time — all tailored to personal fitness goals like fat loss, staying healthy, or slimming down.
 
----
+## ✨ Key Features
 
-## 🧠 Project Overview
+- 🔍 **Smart Meal Search:** Search meals across curated plans and log them instantly.
+- 📊 **Dynamic Nutrition Summary:** Track total calories, protein, carbs, fat, and net calorie balance.
+- ⚡ **Live Activity Logging:** Add physical activities and track calories burned with intensity.
+- 🧠 **Goal-Based Recommendations:** Personalized targets and progress bars based on user goals.
+- 🧾 **Meal Plans Integration:** Apply full meal plans or individual meals and reflect them in your tracker.
+- 💡 **Tips Section:** Nutrition advice to encourage healthy habits.
 
-This application allows users to:
+## 🛠 Tech Stack
 
-- Register and log in with a username (no passwords required for simplicity and security).
-- Complete their user profile with height, weight, and fitness goal.
-- Log meals and calculate caloric intake.
-- Receive meal plan recommendations based on user health data.
-- Contact a dietician filtered by dietary allergies.
+- **Frontend:** React, TypeScript, TailwindCSS, Vite
+- **Backend:** Node.js (Express)
+- **State Management:** React Context API
 
-All actions are securely tied to a server-side session (via cookie), and state is managed efficiently without any client-side storage mechanisms such as localStorage or IndexedDB.
+## 🚀 Getting Started
 
----
+### 1. Clone the repository
 
-## 💻 Technologies Used
+```bash
+git clone https://github.com/Rushyyprajapati/Calorieapp.git
+cd Calorieapp
+```
 
-### Frontend
-- [React](https://reactjs.org/) via [Vite](https://vitejs.dev/)
-- Vanilla CSS (no frameworks, no preprocessors)
-- Semantic HTML5 with responsive design
+### 2. Install dependencies
 
-### Backend
-- [Node.js](https://nodejs.org/)
-- [Express](https://expressjs.com/)
-- [cookie-parser](https://www.npmjs.com/package/cookie-parser) for session handling
-
-> ❗Note: Only pre-approved libraries were used per course requirements. No axios, bootstrap, router, or storage libraries are used.
-
----
-
-## 🔐 Security and Authentication
-
-- **Registration required** before login; usernames are stored in server memory.
-- The special username `"dog"` is always **denied access**, per course security expectations.
-- A session ID is generated at login and stored in a cookie. This session is used for authorization in all API calls.
-- User input is **sanitized and validated** both on the frontend and backend to prevent injection/XSS.
-
----
-
-## 🌐 How to Use the App
-
-### 🏁 Start Locally
-
-1. Clone or unzip the project in your local directory.
-2. Run the following commands:
-3. 
 ```bash
 npm install
-npm run build
-npm start
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+The app will start at [http://localhost:5173](http://localhost:5173)
+
+---
+
+### ✅ Optional
+
+If you’re using a separate server for backend (`express/`), run this too:
+
+```bash
+cd server
+npm install
+npm run dev
+```
